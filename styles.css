@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 99.9%;
+}
+.heading {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: white;
+  padding: 20px;
+  text-shadow: 2px -2px 14px greenyellow;
+}
+.bar-area {
+  height: 470px;
+  width: 900px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.bars {
+  background-color: rgb(127, 209, 73);
+  width: 35px;
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  transition: 0.3s ease;
+}
+.bar-val {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 100%;
+  top: -19px;
+}
+.btns {
+  font-weight: bolder;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  padding: 12px;
+  border-radius: 10px;
+  border-color: rgb(127, 209, 73);
+}
+input {
+  margin-left: 50px;
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: rgb(127, 209, 73);
+}

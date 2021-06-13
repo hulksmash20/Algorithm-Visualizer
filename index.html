@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Algorithm Visualizer</title>
+  </head>
+  <body>
+    <div class="heading">Welcome to Algorithm Visualizer</div>
+    <div class="bar-area"></div>
+
+    <div class="buttons">
+      <button class="btns" onclick="generateArray()">Generate Array</button>
+      <input
+        type="number"
+        name="number"
+        id="number"
+        placeholder="Enter a Number"
+      />
+      <button class="btns" onclick="linearSearch(number.value)">
+        Linear Search
+      </button>
+      <button class="btns" onclick="binarySearch(number.value)">
+        Binary Search
+      </button>
+      <button class="btns" onclick="selectionSort()">Selection Sort</button>
+      <button class="btns" onclick="bubbleSort()">Bubble Sort</button>
+      <button class="btns" onclick="insertionSort()">Insertion Sort</button>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+      integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"
+      integrity="sha512-au5zlskyQcIGWsL+hWwp6NchmTWSK7UF84uGi2Vr+41wT/TE4oGyVvPzdxyZ2+7ms+8W2NfnsrmfcDaVQYekAA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      VANTA.NET({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        scaleMobile: 1.0,
+        color: 0x11fc00,
+        backgroundColor: 0x0,
+        maxDistance: 26.0,
+        spacing: 20.0,
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>
